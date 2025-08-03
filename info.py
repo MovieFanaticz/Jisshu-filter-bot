@@ -16,15 +16,15 @@ def is_enabled(value, default):
 
 # Main
 SESSION = environ.get("SESSION", "Media_search")
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "16638153"))
+API_HASH = environ.get("API_HASH", "30549ba5a4c3d56ab82131ac12838a1e")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8381516524:AAFlArFSlApnWXkk6HvDunS2WW_wpt-hoTA")
 PORT = environ.get("PORT", "8082")
 
 # Owners
 ADMINS = [
     int(admin) if id_pattern.search(admin) else admin
-    for admin in environ.get("ADMINS", "5672857559").split()
+    for admin in environ.get("ADMINS", "5154395087").split()
 ]
 OWNER_USERNAME = environ.get(
     "OWNER_USERNAME", "IM_JISSHU"
@@ -40,12 +40,12 @@ CHANNELS = [
 # ForceSub Channel & Log Channels
 AUTH_CHANNEL = int(environ.get("AUTH_CHANNEL", ""))
 AUTH_REQ_CHANNEL = int(environ.get("AUTH_REQ_CHANNEL", ""))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
-LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002284158926"))
+LOG_API_CHANNEL = int(environ.get("LOG_API_CHANNEL", "-1002707619880"))
 LOG_VR_CHANNEL = int(environ.get("LOG_VR_CHANNEL", ""))
 
 # MongoDB
-DATABASE_URI = environ.get("DATABASE_URI", "")
+DATABASE_URI = environ.get("DATABASE_URI"mongodb+srv://mfmovie2000:Sahad4li@123@cluster0.8lxurrz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"")
 DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
 
 # Files index database url
@@ -53,7 +53,7 @@ FILES_DATABASE = environ.get("FILES_DATABASE", "")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", "jisshu")
 
 # Other Channel's
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1001864434358"))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002819612421"))
 DELETE_CHANNELS = int(environ.get("DELETE_CHANNELS", "0"))
 request_channel = environ.get("REQUEST_CHANNEL", "-1001864434358")
 REQUEST_CHANNEL = (
@@ -61,11 +61,11 @@ REQUEST_CHANNEL = (
     if request_channel and id_pattern.search(request_channel)
     else None
 )
-MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1001864434358"))
+MOVIE_UPDATE_CHANNEL = int(environ.get("MOVIE_UPDATE_CHANNEL", "-1002341696048"))
 
 # Added Link Here Not Id
-SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")
-MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "")
+SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "https://t.me/+jmOvHSNhrO03MDI1")
+MOVIE_GROUP_LINK = environ.get("MOVIE_GROUP_LINK", "https://t.me/+E-EI4V0Hmj0wYjdl")
 
 # Verification
 IS_VERIFY = is_enabled("IS_VERIFY", True)
@@ -133,8 +133,8 @@ START_IMG = (
         "https://i.ibb.co/qpxpGmC/image.jpg https://i.ibb.co/DQ35zLZ/image.jpg",
     )
 ).split()
-FORCESUB_IMG = environ.get("FORCESUB_IMG", "https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg")
-REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split()
+FORCESUB_IMG = environ.get("FORCESUB_IMG", "https://t.me/+jmOvHSNhrO03MDI1")
+REFER_PICS = (environ.get("REFER_PICS", "https://telegra.ph/file/70f73406108b7dbbd2197.jpg")).split()
 PAYPICS = (
     environ.get("PAYPICS", "https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg")
 ).split()
